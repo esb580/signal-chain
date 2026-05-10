@@ -25,3 +25,14 @@ This project documents my guitar rig and serves as a personal study library for 
 ## Signal Flow Diagram
 
 ![Blues rig signal chain](blues_rig_signal_chain_v7.svg)
+
+---
+
+## Manual Sources
+
+| Device | Manual Page | Direct PDF |
+|--------|-------------|------------|
+| BOSS IR-200 | [Owner's Manuals](https://www.boss.info/global/support/by_product/ir-200/owners_manuals/) | [IR200_eng02_W.pdf](https://static.roland.com/assets/media/pdf/IR-200_eng02_W.pdf) |
+| BOSS RV-6 | [Owner's Manuals](https://www.boss.info/global/support/by_product/rv-6/owners_manuals/) | [RV6_M_eng01_W.pdf](https://static.roland.com/assets/media/pdf/RV-6_eng01_W.pdf) |
+| BOSS RC-1 | [Owner's Manuals](https://www.boss.info/global/support/by_product/rc-1/owners_manuals/) | [RC1_M_eng02_W.pdf](https://static.roland.com/assets/media/pdf/RC-1_M_eng02_W.pdf) |
+| BOSS FS-6 | [Owner's Manuals](https://www.boss.info/global/support/by_product/fs-6/owners_manuals/) | — |

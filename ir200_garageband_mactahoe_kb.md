@@ -1,4 +1,3 @@
-```markdown
 # BOSS IR-200 + GarageBand Setup on macOS Tahoe
 **Knowledge Base Article — Blues Rig Recording Setup**
 
@@ -129,4 +128,3 @@ The IR-200 is a full 4-in/4-out USB audio device. However, macOS will not presen
 | Driver won't install | Set Privacy & Security → Allow apps from "App Store and identified developers"; Control-click installer and choose Open |
 | IR-200 disappeared after Mac sleep | Quit GarageBand, power cycle IR-200, reconnect USB |
 | IR-200 SYSTEM USB MODE must be VENDOR | Press MENU → SYSTEM → USB MODE → set to VENDOR |
-```

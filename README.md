@@ -5,6 +5,12 @@
 
 ---
 
+## Description
+
+This project documents my guitar rig components and settings. In addition it is an attempt to understand
+my amp simulator and guitar tones to their fullest, and have a way to capture that through recording using 
+only materials I have on hand as a weekend musician. 
+
 ## Signal Flow Diagram
 
 ![Blues rig signal chain](blues_rig_signal_chain_v7.svg)

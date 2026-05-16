@@ -265,34 +265,55 @@ Quick reference for all saved patches. Full build workflow above applies to each
 
 ---
 
-### Patch B — PAF Gibson voice (Memory TBD)
+### Patch B — VOX-CLN-1 H (Memory 121)
 **Guitar:** Gibson / PAF humbuckers
-**Target tone:** Warm blues humbucker voice
+**Target tone:** 70s–80s British crunch — controllable with Gibson volume knob, Vox AC30 character
+
+#### Tone Research — Who This Is Based On
+Brian May ran his AC30 on the Normal channel with volume at 10 and the cut control all the way off for maximum treble, using the guitar's volume control to dial in textures from sparkling clean to thick dirty distortion. The treble booster drove the amp's input stage into natural power tube saturation — not a preamp gain sound, but a pushed amp sound. The Celestion Blue — the AC30's native speaker — delivers dampened attack, warm lows, mellow upper-mids and brilliant bell-like top-end, developing beautiful musical compression when pushed. Jimmy Page's approach was similar — gain at 6, bass at 8, mids at 6, treble at 7 on his Marshall Plexi, with PAF humbuckers doing most of the heavy lifting. The common thread: moderate-high gain from a pushed amp, mid-forward EQ, and guitar volume as the primary tone sculptor.
+
+#### Cabinet Choice — Why and What to Load Next
+The Princeton P10R (USER IR 1–10) is a 10" speaker and works, but for authentic British crunch the correct speaker is a **12" Celestion Blue** (AC30 native) or **Celestion Greenback** (Marshall native). The Greenback is voiced with extra broad midrange attack and restrained high end that fosters punchy chords and searing leads without fizz.
+
+**For now (using current USER IRs):** USER IR 1 (single 121 ribbon) — warmest and most compressed of the loaded IRs, closest approximation to Celestion Blue character.
+
+**Recommended next IR purchase:** Celestion official IR pack — Blue or Greenback. Both available at celestionplus.com. Load into USER IR 11–12.
 
 #### IR-200
 | Parameter | Value | Notes |
 |-----------|-------|-------|
-| Amp | TBD | To be determined — Twin / Vox / Marshall options |
-| Cabinet | TBD — Princeton P10R USER IR | Start with USER IR 1 (121 ribbon) for warmth |
-| Gain | TBD | |
-| Level | TBD | |
-| Bass | TBD | |
-| Mid | TBD | |
-| Treble | TBD | |
+| Amp | Vox AC30 (or closest Vox sim available) | Normal channel character — clean platform pushed hard |
+| Cabinet | USER IR 1 — Princeton P10R 121 single ribbon | Warmest/most compressed available; swap for Celestion Blue IR when loaded |
+| Gain | 75 | Simulating AC30 pushed by treble booster — higher than Strat patch |
+| Level | 30 | Slightly hotter than Strat patch |
+| Bass | 35 | Restrained — Vox/PAF combo gets muddy fast |
+| Mid | 65 | Mid-forward — the heart of British crunch |
+| Treble | 70 | High — Vox character lives in the top end; guitar volume tames it |
 | Ambience | OFF | |
 | Send/Return | ON — Before Cabinet | Blues Driver in loop |
 
+**Critical playing note:** Set Gibson volume to 6–7 to start. Roll back for clean, push to 10 for full crunch. This is how May and Page actually played — the amp is set for crunch, the guitar volume does the work.
+
 #### Send/Return — Boss Blues Driver
-| Knob | Setting |
-|------|---------|
-| Level | 4 / 10 |
-| Tone | 5 / 10 |
-| Drive | 3 / 10 |
+The BD-2 here acts like the treble booster in the original rig — pushing the amp input rather than adding heavy distortion itself.
+
+| Knob | Setting | Notes |
+|------|---------|-------|
+| Level | 6 / 10 | Higher than Strat patch — pushing the Vox harder |
+| Tone | 4 / 10 | Darker than Strat patch — PAF humbuckers already have presence |
+| Drive | 4 / 10 | Moderate — let the amp sim do the crunch work |
 
 #### RV-6 Reverb
-| Parameter | Setting |
-|-----------|---------|
-| Mode | Plate |
-| Time | 5 |
-| Tone | 5 |
-| Effect Level | 5 |
+Plate kept shorter and drier than the Strat patch — British rock crunch is a drier, more immediate sound. May used tape delay more than reverb; this gives a sense of space without washing out the crunch.
+
+| Parameter | Setting | Notes |
+|-----------|---------|-------|
+| Mode | Plate | |
+| Time | 3 | Shorter than Strat patch — tighter, more immediate |
+| Tone | 6 | Slightly brighter — complements the darker Blues Driver tone setting |
+| Effect Level | 3 | Drier than Strat patch — British crunch sits drier in the mix |
+
+#### H Naming Convention
+`~` = Strat (single coil voicing)
+`H` = Gibson humbucker voicing
+Suggested name: **VOX-CLN-1 H**

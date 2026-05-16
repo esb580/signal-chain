@@ -265,55 +265,84 @@ Quick reference for all saved patches. Full build workflow above applies to each
 
 ---
 
-### Patch B — VOX-CLN-1 H (Memory 121)
+### Patch B — PAF Gibson / 70s Vox Crunch (Memory TBD)
 **Guitar:** Gibson / PAF humbuckers
-**Target tone:** 70s–80s British crunch — controllable with Gibson volume knob, Vox AC30 character
+**Target tone:** Warm, mid-forward 70s Brian May-style crunchy blues — thick harmonic sustain with treble punch
 
-#### Tone Research — Who This Is Based On
-Brian May ran his AC30 on the Normal channel with volume at 10 and the cut control all the way off for maximum treble, using the guitar's volume control to dial in textures from sparkling clean to thick dirty distortion. The treble booster drove the amp's input stage into natural power tube saturation — not a preamp gain sound, but a pushed amp sound. The Celestion Blue — the AC30's native speaker — delivers dampened attack, warm lows, mellow upper-mids and brilliant bell-like top-end, developing beautiful musical compression when pushed. Jimmy Page's approach was similar — gain at 6, bass at 8, mids at 6, treble at 7 on his Marshall Plexi, with PAF humbuckers doing most of the heavy lifting. The common thread: moderate-high gain from a pushed amp, mid-forward EQ, and guitar volume as the primary tone sculptor.
-
-#### Cabinet Choice — Why and What to Load Next
-The Princeton P10R (USER IR 1–10) is a 10" speaker and works, but for authentic British crunch the correct speaker is a **12" Celestion Blue** (AC30 native) or **Celestion Greenback** (Marshall native). The Greenback is voiced with extra broad midrange attack and restrained high end that fosters punchy chords and searing leads without fizz.
-
-**For now (using current USER IRs):** USER IR 1 (single 121 ribbon) — warmest and most compressed of the loaded IRs, closest approximation to Celestion Blue character.
-
-**Recommended next IR purchase:** Celestion official IR pack — Blue or Greenback. Both available at celestionplus.com. Load into USER IR 11–12.
+**Inspiration:** Brian May's Queen tone: Vox AC30 driven by a treble booster (Rangemaster), producing distinctive throaty midrange, harmonic richness, and controlled overdrive through amp input drive rather than pedal distortion. Paired with Gibson PAF humbuckers for thick, warm tone.
 
 #### IR-200
 | Parameter | Value | Notes |
 |-----------|-------|-------|
-| Amp | Vox AC30 (or closest Vox sim available) | Normal channel character — clean platform pushed hard |
-| Cabinet | USER IR 1 — Princeton P10R 121 single ribbon | Warmest/most compressed available; swap for Celestion Blue IR when loaded |
-| Gain | 75 | Simulating AC30 pushed by treble booster — higher than Strat patch |
-| Level | 30 | Slightly hotter than Strat patch |
-| Bass | 35 | Restrained — Vox/PAF combo gets muddy fast |
-| Mid | 65 | Mid-forward — the heart of British crunch |
-| Treble | 70 | High — Vox character lives in the top end; guitar volume tames it |
-| Ambience | OFF | |
-| Send/Return | ON — Before Cabinet | Blues Driver in loop |
+| Amp | VOX AC30 | Captures the classic 70s crunch — natural breakup at moderate gain. AC30 pairs beautifully with humbucker thickness. |
+| **OUT MODE** | **STEREO** | **Key: Use CABINET A and B in stereo spread across left/right speakers.** This creates width and depth, avoiding a centered, mono-ish tone. |
+| **CABINET A** (LEFT) | 212 DIAMOND D57+R121-S | VOX AC30 cabinet (Celestion G12M Greenbacks) with dual mics: Shure SM57 + Royer R-121. Warm, balanced. Goes to your left speaker. |
+| **CABINET B** (RIGHT) | 212 DIAMOND CND87-S | **Different mic: Neumann U87 condenser** — brighter, more presence. Creates stereo image width: warm on left, bright on right. The stereo pair creates a 3D soundstage. |
+| Gain | 65 | Higher than Twin Reverb patch — AC30 gains authority through amp input drive, not pedal grit. This pushes the preamp into natural compression and mild saturation (the Brian May secret). |
+| Level | 35 | Raised vs. clean patch — compensates for higher gain and maintains tape-like presence without digital harshness |
+| Bass | 55 | Slight boost — humbuckers are naturally dark, and AC30s are warm. Just above center to keep low-mid body without boom. |
+| Mid | 65 | Key setting. AC30s shine in midrange — this lifts the "throat" that makes the tone sing. Humbuckers + AC30 mids = Brian May spank. |
+| Treble | 55 | Moderate — AC30 doesn't need the treble lift a Fender does. The STEREO pair already provides sparkle and presence. This slight peak avoids harshness. |
+| Ambience | OFF / STEREO | All reverb from RV-6, BUT set AMBIENCE MODE to STEREO for spatial width through the reverb. |
+| Send/Return | ON — Before Cabinet | Treble Booster in loop (simulating Rangemaster placement) |
 
-**Critical playing note:** Set Gibson volume to 6–7 to start. Roll back for clean, push to 10 for full crunch. This is how May and Page actually played — the amp is set for crunch, the guitar volume does the work.
+#### Critical Setup: Stereo Output Configuration
 
-#### Send/Return — Boss Blues Driver
-The BD-2 here acts like the treble booster in the original rig — pushing the amp input rather than adding heavy distortion itself.
+To maximize this patch, **you MUST configure the IR-200 for stereo output:**
+
+1. **IR-200 OUTPUT connections:**
+   - OUTPUT A/MONO → LEFT SPEAKER (Master Volume Controller, L input)
+   - OUTPUT B → RIGHT SPEAKER (Master Volume Controller, R input)
+
+2. **IR-200 Menu Settings (per memory — these must be saved to patch):**
+   - Press **[MENU]**, navigate to **CABINET**
+   - Set **OUT MODE → STEREO** (not MONO MIX)
+   - This sends CABINET A to OUTPUT A (left), CABINET B to OUTPUT B (right)
+   - Navigate to **AMBIENCE**
+   - Set **MODE → STEREO** (not MONO)
+   - This makes the reverb spread across both channels
+
+3. **Why this matters:**
+   - MONO MIX would sum both cabinets together — you'd lose the stereo image and all the depth
+   - STEREO MODE preserves the left/right separation, creating width and a 3D soundstage
+   - The RV-6 then receives both L/R channels and applies reverb across the stereo field
+
+Without stereo output configured, you'll have one amazing blended tone — but you'll be throwing away half the IR-200's potential.
+
+
+This replicates the Rangemaster treble booster's role: drive the AC30's input to push it into saturation without adding distortion itself.
 
 | Knob | Setting | Notes |
 |------|---------|-------|
-| Level | 6 / 10 | Higher than Strat patch — pushing the Vox harder |
-| Tone | 4 / 10 | Darker than Strat patch — PAF humbuckers already have presence |
-| Drive | 4 / 10 | Moderate — let the amp sim do the crunch work |
+| Drive | 6–7 / 10 | Higher than the SRV patch. The booster's job is to push the AC30 input hard — this creates the natural overdrive and sustain. |
+| Tone | 8 / 10 | Bright. Treble boosters always add presence. The AC30's natural warmth + humbucker thickness + bright boost = balanced. Treble cuts through without harshness. |
+| Level | 8–9 / 10 | Very high. This is the "secret" of the Brian May tone — the booster output level drives the amp's preamp stage into compression and harmonic bloom. Set it just slightly lower than full to preserve headroom and tone definition. |
+
+**Why these settings — The STEREO Cabinet Pairing Strategy:**
+
+The IR-200 can run two separate cabinets simultaneously: CABINET A to OUTPUT A (left speaker), CABINET B to OUTPUT B (right speaker). This is far more powerful than a single centered cabinet.
+
+- **LEFT (CABINET A): 212 DIAMOND D57+R121-S** — Royer ribbon + SM57 dual mic. Warm, balanced, full-bodied. Sets the foundation of tone.
+- **RIGHT (CABINET B): 212 DIAMOND CND87-S** — Neumann U87 condenser mic. Bright, detailed, airy. Adds sparkle, presence, and width.
+
+**Why this works for Gibson PAF + AC30:**
+The ribbon mic (left) gives the PAF's natural warmth a home. The condenser (right) provides the cutting detail and presence that keeps a warm tone from sounding dull. Together: warm + bright = 3D, articulate, alive tone with stereo width. This is how Queen and 70s studios actually recorded — one warm mic, one bright mic, blended.
+
+**Physical setup requirement:** Your OUTPUT A goes to LEFT SPEAKER, OUTPUT B goes to RIGHT SPEAKER. The RV-6 then receives both L/R in stereo, adding spatial reverb on top. This creates a theatrical, three-dimensional tone that a mono cabinet simply cannot match.
+
+The Tube Screamer's bright tone curve mimics a Rangemaster treble booster when the drive and level are stacked high. The AC30 model's natural sag and compression at high input levels recreates the "push" behavior of the real amp.
 
 #### RV-6 Reverb
-Plate kept shorter and drier than the Strat patch — British rock crunch is a drier, more immediate sound. May used tape delay more than reverb; this gives a sense of space without washing out the crunch.
-
 | Parameter | Setting | Notes |
 |-----------|---------|-------|
-| Mode | Plate | |
-| Time | 3 | Shorter than Strat patch — tighter, more immediate |
-| Tone | 6 | Slightly brighter — complements the darker Blues Driver tone setting |
-| Effect Level | 3 | Drier than Strat patch — British crunch sits drier in the mix |
+| Mode | Plate | Classic studio reverb — adds space without muddying the thick midrange tone |
+| Time | 6 | Slightly longer than Patch A — humbuckers' sustain benefits from extended plate verb |
+| Tone | 6 | Slightly brighter plate character — the dual mic cabinet (SM57+R121) already has good balance, so subtle brightening adds air without thinness |
+| Effect Level | 4 | More subtle than clean patch — overdrive tone doesn't need as much reverb for definition |
 
-#### H Naming Convention
-`~` = Strat (single coil voicing)
-`H` = Gibson humbucker voicing
-Suggested name: **VOX-CLN-1 H**
+#### Performance Notes
+- **Guitar volume sweet spot:** Turn guitar volume back to 6–7/10 for cleaner, jangly lows (like Brian May's arpeggios). Push to 9–10 for thick, overdriven solos.
+- **Booster interaction:** This patch shines with the Tube Screamer booster engaged. If you need a second "cleaner" variation, duplicate this patch and turn the Send/Return OFF for a pure AC30 tone without booster.
+- **Comparison to Patch A:** Patch A (Twin Reverb + Strat) is cool and clean. Patch B (AC30 + PAF) is warm and crunchy — think "Bohemian Rhapsody" rhythm section energy vs. "Layla" fingerpicking.
+
+

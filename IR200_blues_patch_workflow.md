@@ -77,6 +77,24 @@ Done once via the BOSS IR Loader app on macOS.
 
 ---
 
+## Saved Patch — Memory 120
+
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| **Memory slot** | 120 | |
+| **Name** | RTS-CLN-1 ~ | ~ = voiced for Strat |
+| **Amp** | Twin Reverb | |
+| **Cabinet** | USER IR 6 | Princeton P10R — 121+57 dual mic (ribbon + SM57) |
+| **Gain** | 50 | Clean headroom with some push |
+| **Level** | 25 | |
+| **Bass** | 50 | |
+| **Mid** | 50 | |
+| **Treble** | 60 | Slight top end lift for Strat single coils |
+| **Ambience** | OFF | All reverb from RV-6 |
+| **Send/Return** | ON — Before Cabinet | Tube Screamer in loop |
+
+---
+
 ## Building the Patch from Scratch
 
 ### Step 1 — Connect the rig
@@ -91,15 +109,15 @@ You will set all parameters manually. The current patch in memory 120 doesn't ma
 
 - Press **[AMP] knob** to enter amp edit
 - Turn **[AMP] knob** to select **Twin Reverb**
-- Set initial parameters:
+- Set parameters to match saved patch:
 
-| Parameter | Starting Value | Notes |
-|-----------|---------------|-------|
-| Gain | Low (2–3) | Clean headroom |
-| Level | Unity | Adjust to taste |
-| Bass | Nearly off | Princeton 10" is boomy — cut aggressively |
-| Middle | 5 | Start here |
-| Treble | 6 | Start here |
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| Gain | 50 | Clean headroom with some push |
+| Level | 25 | |
+| Bass | 50 | |
+| Middle | 50 | |
+| Treble | 60 | Slight top end lift for Strat |
 
 ### Step 4 — Turn Ambience OFF
 
@@ -119,17 +137,15 @@ This places the Tube Screamer between the amp sim and the cabinet IR — exactly
 ### Step 6 — Select the Princeton Cabinet IR
 
 - Press **[CABINET] knob** to enter cabinet edit
-- Turn **[CABINET] knob** to scroll to **USER IR 1**
-- Play your Strat and step through USER IR 1–10 while listening
-- You're looking for creamy, sparkly, edge-of-breakup with single coils
+- Turn **[CABINET] knob** to scroll to **USER IR 6** (121+57 dual mic — the chosen cab for this patch)
 
-**Mic character guide for this search:**
+**Mic character guide for auditioning alternatives:**
 
 | IR | Mic | Character |
 |----|-----|-----------|
 | USER IR 1 | 121 (ribbon) | Warmest — most "creamy" |
 | USER IR 3 | 57 | Brightest — most presence |
-| USER IR 6 | 121+57 dual | Best of both — recommended starting point for sparkly blues |
+| USER IR 6 ✓ | 121+57 dual | Best of both — **saved patch uses this** |
 
 ### Step 7 — Dial in the Tube Screamer (SRV settings)
 
@@ -164,7 +180,7 @@ Once everything sounds right:
    - **[AMP] knob** — changes letter
    - **[CABINET] knob** — moves cursor left/right
    - **[AMBIENCE] knob** — switches ABC / abc / 123
-   - Suggested names: **TWIN BLS** / **SRV RIG** / **BLUES 1**
+   - This patch saved as: **RTS-CLN-1 ~** (~ denotes Strat voicing)
 6. Push **[MEMORY] knob** to save
 
 ---
@@ -206,3 +222,77 @@ RV-6 → Master Volume → Speakers
 - Turn the IR-200 **Amp Sim OFF** — you're feeding a preamp signal, not a guitar signal
 - The real amp's power amp section is bypassed and sits idle
 - This uses the real amp's preamp character with a high quality cabinet IR instead of the amp's physical speaker cab
+
+---
+
+## Appendix 1 — Patch Reference Sheets
+
+Quick reference for all saved patches. Full build workflow above applies to each — only the values change.
+
+---
+
+### Patch A — RTS-CLN-1 ~ (Memory 120)
+**Guitar:** Strat (single coil)
+**Target tone:** Creamy sparkly edge-of-breakup clean blues
+
+#### IR-200
+| Parameter | Value |
+|-----------|-------|
+| Amp | Twin Reverb |
+| Cabinet | USER IR 6 — Princeton P10R 121+57 dual mic |
+| Gain | 50 |
+| Level | 25 |
+| Bass | 50 |
+| Mid | 50 |
+| Treble | 60 |
+| Ambience | OFF |
+| Send/Return | ON — Before Cabinet |
+
+#### Send/Return — Ibanez Tube Screamer (SRV settings)
+| Knob | Setting |
+|------|---------|
+| Level | 7–8 / 10 |
+| Tone | 6–7 / 10 |
+| Drive | 3–4 / 10 |
+
+#### RV-6 Reverb
+| Parameter | Setting |
+|-----------|---------|
+| Mode | Plate |
+| Time | 5 |
+| Tone | 5 |
+| Effect Level | 5 |
+
+---
+
+### Patch B — PAF Gibson voice (Memory TBD)
+**Guitar:** Gibson / PAF humbuckers
+**Target tone:** Warm blues humbucker voice
+
+#### IR-200
+| Parameter | Value | Notes |
+|-----------|-------|-------|
+| Amp | TBD | To be determined — Twin / Vox / Marshall options |
+| Cabinet | TBD — Princeton P10R USER IR | Start with USER IR 1 (121 ribbon) for warmth |
+| Gain | TBD | |
+| Level | TBD | |
+| Bass | TBD | |
+| Mid | TBD | |
+| Treble | TBD | |
+| Ambience | OFF | |
+| Send/Return | ON — Before Cabinet | Blues Driver in loop |
+
+#### Send/Return — Boss Blues Driver
+| Knob | Setting |
+|------|---------|
+| Level | 4 / 10 |
+| Tone | 5 / 10 |
+| Drive | 3 / 10 |
+
+#### RV-6 Reverb
+| Parameter | Setting |
+|-----------|---------|
+| Mode | Plate |
+| Time | 5 |
+| Tone | 5 |
+| Effect Level | 5 |
